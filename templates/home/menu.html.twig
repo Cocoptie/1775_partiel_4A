@@ -1,0 +1,27 @@
+{% block stylesheets %}
+    {{ encore_entry_link_tags('menu') }}
+{% endblock %}
+
+<section class="menu_section">
+    <div class="navbar_submenu_container">
+        <ul class="navbar_submenu">
+            <li class="navbar_submenu_content"><a href="https://www.pse.ong/association-humanitaire/espace-presse">Espace presse</a></li>
+            <li class="navbar_submenu_content"><a href="https://www.pse.ong/association-humanitaire/nous-rendre-visite-cambodge">Visite au Cambodge</a></li>
+            <li class="navbar_submenu_content"><a href="https://www.pse.ong/question-projet-contactez-nous">Contact</a></li>
+            <li class="navbar_submenu_content"><a href="https://www.pse.ong/recevez-actualites-pse">S'inscrire à la newsletter</a></li>
+        </ul>
+    </div>
+    <div class="navbar_menu_container">
+    <img class="navbar_menu_logo" src="{{ asset('build/images/logo_pse.webp') }}" alt="PSE logo">
+        <ul class="navbar_menu">
+            <li class="navbar_menu_content"><a href="https://www.pse.ong/association-humanitaire/espace-presse">L'association</a></li>
+            <li class="navbar_menu_content"><a href="https://intranet.pse.ong/index.php/login">Nos actions</a></li>
+            <li class="navbar_menu_content"><a href="https://www.pse.ong/association-humanitaire/nous-rendre-visite-cambodge">Je soutiens PSE</a></li>
+            <li class="navbar_menu_content"><a href="https://www.pse.ong/question-projet-contactez-nous">J'agis avec PSE</a></li>
+        </ul>
+            <div class="navbar_menu_button_container">
+                <li><a href="https://www.pse.ong/faire-don/donner" class="navbar_menu_content navbar_menu_button">Je donne</a></li>
+                <li><a href="{{ path('app_login') }}" class="navbar_menu_content navbar_menu_button">Je me connecte</a></li>
+            </div>
+    </div>
+</section>
